@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #AAD1FA;
+    
+}
+
+main{
+    width: 50%;
+    
+}
+
+
+.container{
+   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    
+   
+}
+
+.titulo{
+    margin-bottom: 35px;
+}
+.div-form{
+    width: 100%;
+    font-weight: 500 ;
+    
+   
+}
+
+
+
+  input{
+    width: 100%;
+  
+    /*padding: 12px 15px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+  }
+
+  .form-group{
+   
+    margin-top: 15px;
+    
+  }
+  .form-floating #salvar{
+    margin-top: 50px;
+  }
+
+
+
+.linha-ou {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .linha-ou::before,
+  .linha-ou::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #7c7a7a;
+    margin: 0 10px;
+  }
+  
+  .linha-ou span {
+    white-space: nowrap;
+  }
+
+
+
+  button, .botaoInput {
+
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+    background-color: #AD3B9F;
+  }
+
+
+  button:hover{
+    background-color: #45c570;
+  }
+  .botaoInput:hover{
+    background-color: #45c570;
+  }
+  a{
+    color: #AD3B9F;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(255, 255, 255);
+  }
+
+/*---------------------------------------------------------------*/
+  .required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+
+  
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  input::placeholder {
+    font-size: 14px; /* ajuste o tamanho conforme necessário */
+    color: #999; /* opcional, muda a cor do placeholder */
+}
+  
+  .visible {
+    display: block;
+  }
+
+  footer {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 300px;
+  }

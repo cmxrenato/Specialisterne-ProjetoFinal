@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    
+    
+    
+
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 1rem;
+  }
+  .menu {
+    
+    padding: 10px 20px; /* Espaçamento interno */
+    border-bottom: 1px solid #e0e0e0; /* Linha inferior (opcional) */
+  }
+  
+  .menu ul {
+    border: 1px solid red;
+    list-style: none; /* Remove os marcadores */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Layout flexível para alinhar horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    
+  }
+  
+  .menu li {
+    margin: 0;
+  }
+  
+  .menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #b6b4b4; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte (opcional) */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px 0; /* Espaçamento interno vertical */
+    position: relative;
+  }
+  
+  .menu a:hover {
+    color: #000000; /* Cor ao passar o mouse */
+  }
+  
+  /* Opcional: Efeito de sublinhado ao passar o mouse */
+  .menu a::after {
+    content: '';
+    display: block;
+    width: 30%; /* Largura do sublinhado (ajuste conforme necessidade) */
+    height: 2px;
+    background-color: #000000;
+    margin: 3px auto 0; /* Centraliza o traço */
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.3s ease;
+  }
+  
+  .menu a:hover::after {
+    opacity: 1; /* Aparece ao passar o mouse */
+  }
+  .menu a.active {
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .linha-divisoria {
+    width: 100%;       
+    height: 1px;       
+    background-color: #d1d1d1; 
+    margin-top: 0;    
+    margin-bottom: 10px;
+
+  }
+
+ 
+  .tab-bar {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  .tab-bar div {
+    font-weight: 500;
+    opacity: 0.5;
+  }
+  .tab-bar .active {
+    font-weight: bold;
+    opacity: 1;
+    border-bottom: 2px solid black;
+  }
+  .post {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+  }
+  .post img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+  }
+  .info {
+    font-size: 0.8rem;
+    color: gray;
+  }
+  .actions {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
